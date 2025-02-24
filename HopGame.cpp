@@ -114,41 +114,41 @@ void loading(bool c_l_s, float time){
 
 int errorConfig(int errorCounter){
 	if(errorCounter==3){
-				string shookhi;
-				cout<<"Shookhi dari?(are/na)\n:";
-				cin>>shookhi;
-				if(shookhi == "are"){
-					cout<<"Pas mindazamet biroon hal koni";
-					exit(0);
-				}else if(shookhi == "na"){
-					cout<<"Afarin pas dobare dorost bezan";
-					loading(0, 0.3);
-					system("cls");
-				}else{
-					system("cls");
-					cout<<"Eshtebahe bozorgi kardi!";
-					exit(0);
-				}
+		string shookhi;
+		cout<<"Shookhi dari?(are/na)\n:";
+		cin>>shookhi;
+		if(shookhi == "are"){
+			cout<<"Pas mindazamet biroon hal koni";
+			exit(0);
+		}else if(shookhi == "na"){
+			cout<<"Afarin pas dobare dorost bezan";
+			loading(0, 0.3);
+			system("cls");
+		}else{
+			system("cls");
+			cout<<"Eshtebahe bozorgi kardi!";
+			exit(0);
+		}
+	}
+	if(errorCounter==6){
+		string shookhi;
+		cout<<"dobare miporsam, shookhi dari?(are/na)\n:";
+		cin>>shookhi;
+		if(shookhi == "are"){
+			while(true){
+				cout<<"*";
 			}
-			if(errorCounter==6){
-				string shookhi;
-				cout<<"dobare miporsam, shookhi dari?(are/na)\n:";
-				cin>>shookhi;
-				if(shookhi == "are"){
-					while(true){
-						cout<<"*";
-					}
-				}else if(shookhi == "na"){
-					cout<<"Afarin pas dobare dorost bezan";
-					loading(0, 0.3);
-					system("cls");
-					
-					cout<<"He he haghete";
-					exit(0);
-				}else{
-					system("cls");
-					cout<<"Eshtebahe bozorgi kardi!";
-					exit(0);
-				}
-			}
+		}else if(shookhi == "na"){
+			cout<<"Afarin pas dobare dorost bezan";
+			loading(0, 0.3);
+			system("cls");
+			
+			cout<<"He he haghete";
+			exit(0);
+		}else{
+			system("cls");
+			cout<<"Eshtebahe bozorgi kardi!";
+			exit(0);
+		}
+	}
 }
